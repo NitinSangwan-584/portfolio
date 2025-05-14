@@ -13,7 +13,7 @@
 
 <body class="color-black">
     <!-- header -->
-    <header class="align-items-center min-vh-100 justify-content-center color-black">
+    <header class="align-items-center min-h-100 justify-content-center">
         <nav class=" pb-sm-0 align-items-center color-white  w-100 mb-5">
             <div class="container">
                 <div class="d-flex align-items-center  justify-content-between w-100">
@@ -31,7 +31,7 @@
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
                                 href="">Home</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
-                                href="">About me</a></li>
+                                href="#section-2">About me</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
                                 href="">Skills</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
@@ -47,23 +47,23 @@
                 </div>
             </div>
         </nav>
-        <div class="container z-3">
+        <div class="container">
             <div class="row align-items-center py-5 position-relative">
                 <div
                     class="col-lg-6 col-12 position-relativ d-flex justify-content-center align-items-center order-1 order-lg-2">
                     <div class="my-img-border d-flex justify-content-center align-items-center">
-                        <img src="./assets/img/png/IMG_2166.jpg" alt="img" class="my-img">
+                        <img src="./assets/img/png/image-2.JPG" alt="img" class="my-img">
                     </div>
                     <div class="down position-absolute">
-                        <a id="section-1" href="#section-2"><button class="shadow-blur scroll-btn" type="button"><img
-                                    src="./assets/img/svg/btn-arrow.svg" alt=""></button></a>
-                        <p class="font-family-primary mb-0 fw-normal fs-6 lh-24 text-white opacity-70">Scroll Down
+                        <a id="section-1" href="#section-2"><button class="shadow-blur fs-2 color-white scroll-btn"
+                                type="button">↓</button></a>
+                        <p class="font-family-primary mb-0 fw-normal fs-6 lh-24 color-white opacity-70">Scroll Down
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12  mt-164 d-flex flex-column text-start  order-2 order-lg-1">
                     <p class="font-family-primary color-white fw-normal fs-5 lh-30 mt-5">Hi I am Nitin Sangwan</p>
-                    <h1 class="heading font-family-primary color-white fw-bold text-xl lh-50 ">
+                    <h1 class="heading font-family-primary color-white fw-bold text-lg lh-50 ">
                         Front-End-Developer</h1>
                     <p class="font-family-primary fw-normal fs-5 color-white lh-30  mt-3">Follow Me </p>
                     <div class="color-white">
@@ -90,6 +90,35 @@
             </div>
         </div>
     </header>
+    <!-- about me -->
+    <section id="section-2" class="align-items-center min-h-100  py-5">
+        <div class="container">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6">
+                    <img src="./assets/img/png/IMG_2166.jpg" alt="Nitin Sangwan" class="img-fluid w-100 my-img-2">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="font-family-primary color-white fw-bold text-lg mb-3">About Me</h2>
+                    <p class="font-family-primary text-md lh-30 color-white opacity-75">
+                        Hello! I'm <strong class="color-orange">Nitin Sangwan</strong>, a passionate Front-End Developer
+                        with a focus on
+                        crafting clean, responsive, and user-friendly websites. I love turning problems into
+                        simple, beautiful interfaces using modern web technologies.
+                    </p>
+                    <p class="font-family-primary text-md lh-30 color-white opacity-75">
+                        With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Bootstrap, I
+                        enjoy bringing ideas to life in the browser. I'm always eager to learn, collaborate, and build
+                        things that make an impact.
+                    </p>
+                    <p class="font-family-primary text-md lh-30 color-white opacity-75">
+                        When I'm not coding, you'll find me exploring UI/UX design trends, contributing to open-source,
+                        or leveling up my skills through new challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- go to top btn  -->
     <button class="fs-4 position-fixed myBtn" onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
     <!-- Bootstrap JS  -->

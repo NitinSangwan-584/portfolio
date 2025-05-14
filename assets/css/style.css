@@ -35,24 +35,30 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    border: 1px solid var(--color-black);
+}
+
+.my-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-btn {
-    padding: 22.55px 20.17px;
-    border-radius: 108.64px;
+    padding: 22px 20px;
+    border-radius: 108px;
     backdrop-filter: blur(9.492682456970215px);
-    border: 0.53px solid #FFFFFF33;
+    border: 0.53px solid var(--color-white);
     background: #FFFFFF0A;
     margin-bottom: 16.18px;
 }
 
 .shadow-blur {
     backdrop-filter: blur(30px);
-    border: 1px solid #FFFFFF33;
+    border: 1px solid var(--color-white);
 }
 
 .down {
-    bottom:0px;
+    bottom: 0px;
     right: 8px;
 }
 
@@ -153,7 +159,7 @@
     bottom: 15px;
     right: 15px;
     border: 5px solid var(--color-white);
-    background-color: var(--color-orange);
+    background-color: var(--color-black);
     color: var(--color-white);
     cursor: pointer;
     width: 50px;
@@ -164,7 +170,7 @@
 }
 
 .myBtn:hover {
-    background-color: var(--color-blue);
+    background-color: var(--color-orange);
     transform: scale(1.1);
 }
 
