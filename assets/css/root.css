@@ -1,0 +1,110 @@
+:root {
+    --font-family-primary: "Lacquer", system-ui;
+    --font-family-secondary: "Sarabun", sans-serif;
+    --text-sm: 14px;
+    --text-base: 21.64px;
+    --text-md: 24px;
+    --text-lg: 43px;
+    --text-xl: 44px;
+    --color-black: black;
+    --color-sky: #D4E5FF;
+    --color-orange: #E66501;
+    --color-blue: #245AAB;
+    --color-dark-blue: #1C2430;
+    --color-light-blue: #3586FF;
+    --color-white: #FFFFFF;
+}
+
+.dark {
+    --color-sky: white;
+    --color-black: white;
+    --color-dark-blue: black;
+    --color-light-blue: white;
+    --color-white: black;
+}
+
+.font-family-primary {
+    font-family: var(--font-family-primary);
+}
+
+.font-family-secondary {
+    font-family: var(--font-family-secondary);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.color-sky {
+    color: var(--color-sky);
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.color-black {
+    background: var(--color-black);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-orange {
+    color: var(--color-orange);
+}
+
+.color-light-blue {
+    color: var(--color-light-blue);
+}
+
+.color-dark-blue {
+    color: var(--color-dark-blue);
+}
+
+.bg-blue {
+    background-color: var(--color-blue);
+}
+
+.bg-orange {
+    background-color: var(--color-orange);
+}
+
+.bg-dark-blue {
+    background-color: var(--color-dark-blue);
+}
+
+.bg-light-blue {
+    background-color: var(--color-light-blue);
+}
+
+
+@media (max-width:991.98px) {
+    :root {
+        --text-xl: 32px;
+    }
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --text-xl: 25px;
+        --text-lg: 32px;
+    }
+}
