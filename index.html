@@ -16,8 +16,8 @@
     <header class="align-items-center min-h-100 justify-content-center">
         <nav class=" pb-sm-0 align-items-center color-white  w-100 mb-5">
             <div class="container">
-                <div class="d-flex align-items-center  justify-content-between w-100">
-                    <a href="#" class="color font-family-primary text-decoration-none fw-normal fs-3 lh-20">Logo</a>
+                <div class="d-flex align-items-center gap-5 justify-content-between w-100">
+                    <a href="#" class="color font-family-primary text-decoration-none fw-bold text-lg lh-20">Logo</a>
                     <button id="theme-toggle" class="border-0 rounded color-white theme-btn color-black"
                         onclick="switchTheme()">
                         <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -31,11 +31,11 @@
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
                                 href="">Home</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
-                                href="#section-2">About me</a></li>
+                                href="#about-me">About me</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
                                 href="">Skills</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
-                                href="">Contact me</a></li>
+                                href="#contact">Contact me</a></li>
                     </ul><button
                         class="button-1  color-white font-family-primary fw-semibold lh-25 fs-20 border-0 p-13">Hire
                         Me</button>
@@ -62,10 +62,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-12  mt-164 d-flex flex-column text-start  order-2 order-lg-1">
-                    <p class="font-family-primary color-white fw-normal fs-5 lh-30 mt-5">Hi I am Nitin Sangwan</p>
+                    <p class="font-family-primary color-white fw-normal text-md lh-28 mt-5">Hi I am <strong
+                            class="color-orange fw-bold">Nitin Sangwan</strong></p>
                     <h1 class="heading font-family-primary color-white fw-bold text-lg lh-50 ">
                         Front-End-Developer</h1>
-                    <p class="font-family-primary fw-normal fs-5 color-white lh-30  mt-3">Follow Me </p>
+                    <p class="font-family-primary fw-normal text-md color-white lh-28  mt-3">Follow Me </p>
                     <div class="color-white">
                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
                             <a href="https://discord.com/channels/@me"
@@ -91,29 +92,64 @@
         </div>
     </header>
     <!-- about me -->
-    <section id="section-2" class="align-items-center min-h-100  py-5">
+    <section id="about-me" class="align-items-center min-h-100  py-5">
         <div class="container">
             <div class="row align-items-center py-4">
                 <div class="col-lg-6">
-                    <img src="./assets/img/png/IMG_2166.jpg" alt="Nitin Sangwan" class="img-fluid w-100 my-img-2">
+                    <img src="./assets/img/png/IMG_2166.jpg" alt="Nitin Sangwan" class="img-fluid w-75 my-img-2">
                 </div>
                 <div class="col-lg-6">
                     <h2 class="font-family-primary color-white fw-bold text-lg mb-3">About Me</h2>
-                    <p class="font-family-primary text-md lh-30 color-white opacity-75">
+                    <p class="font-family-primary text-md fw-normal lh-28 color-white opacity-75">
                         Hello! I'm <strong class="color-orange">Nitin Sangwan</strong>, a passionate Front-End Developer
                         with a focus on
-                        crafting clean, responsive, and user-friendly websites. I love turning problems into
-                        simple, beautiful interfaces using modern web technologies.
+                        crafting clean, responsive, and user-friendly websites.
                     </p>
-                    <p class="font-family-primary text-md lh-30 color-white opacity-75">
-                        With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Bootstrap, I
-                        enjoy bringing ideas to life in the browser. I'm always eager to learn, collaborate, and build
-                        things that make an impact.
+                    <p class="font-family-primary text-md fw-normal lh-28 color-white opacity-75">
+                        With a strong foundation in HTML, CSS, JavaScript, and frameworks like React, Tailwind and
+                        Bootstrap,
                     </p>
-                    <p class="font-family-primary text-md lh-30 color-white opacity-75">
-                        When I'm not coding, you'll find me exploring UI/UX design trends, contributing to open-source,
-                        or leveling up my skills through new challenges.
+                    <p class="font-family-primary text-md fw-normal lh-28 color-white opacity-75">
+                        When I'm not coding, you'll find me exploring UI/UX design trends, contributing to open-source.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact  me -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="d-flex gap-5 justify-content-center py-2 align-items-center">
+                    <img src="./assets/img/svg/logo.svg" alt="logo">
+                    <h2 class="font-family-primary text-lg color-white fw-bold">Contact Me</h2>
+                </div>
+                <p class="font-family-primary  color-white text-md lh-28 fw-normal opacity-75">
+                    Get in Touch with <strong class="color-orange">me</strong> or just want to <strong
+                        class="color-orange">say hi</strong> ? I'd love to hear from you!
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="w-100 p-3 rounded-2" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="w-100 p-3 rounded-2" placeholder="Your Email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" rows="5" class="w-100 p-3 rounded-2" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="button-1 font-family-primary px-5 py-2 fw-normal border-0 rounded color-white text-md lh-28">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
