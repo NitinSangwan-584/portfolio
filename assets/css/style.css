@@ -15,6 +15,10 @@
     min-height: 100%;
 }
 
+.lh-20 {
+    line-height: 20px;
+}
+
 .lh-28 {
     line-height: 28px;
 }
@@ -115,6 +119,7 @@
 }
 
 .button-1 {
+    padding:4px 8px;
     background: linear-gradient(103.52deg, #E66501 18.99%, rgba(240, 12, 12, 0.982) 82.34%);
 }
 
@@ -133,23 +138,41 @@
     background: linear-gradient(103.52deg, rgba(240, 12, 12, 0.982) 18.99%, #E66501 82.34%);
 }
 
-.icon:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s;
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        animation-timing-function: ease-out;
+    }
 }
 
-.icon-link {
-    display: block;
-    text-decoration: none;
-    color: var(--color-white);
-    opacity: 70%;
+.icon {
+    display: inline-flex;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    transition: filter 0.3s ease;
 }
 
-.icon-link:hover {
-    transform: scale(1.1);
-    transition: all 300ms linear;
-    text-decoration: underline;
-    -webkit-text-stroke: 1px;
+.icon:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.icon:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.icon:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.icon:nth-child(4) {
+    animation-delay: 0.9s;
 }
 
 /* skills */
@@ -160,15 +183,37 @@
 
 .skill-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid var(--color-white) !important;
+    border: 1px solid var(--color-white) !important;
 }
 
 .skill-item:hover {
-    transform: translateY(-8px);
     box-shadow: 0 8px 16px rgba(255, 165, 0, 0.15);
     border: 1px solid var(--color-orange) !important;
 }
 
+@keyframes pulse-in-out {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.pulse-in-out {
+    animation: pulse-in-out 3s ease-in-out infinite;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+/* footer */
+.hover-orange:hover{
+    color: var(--color-orange);
+}
 /* my-btn */
 .myBtn {
     display: none;
@@ -205,10 +250,6 @@
         top: 0%;
         transition: all 300ms linear !important;
         z-index: 5;
-    }
-
-    .name li:last-child button {
-        margin-left: 0px;
     }
 
     .show-navbar {
