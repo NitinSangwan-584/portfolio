@@ -306,8 +306,12 @@
 }
 
 .myBtn:hover {
-    background-color: var(--color-orange);
     transform: scale(1.1);
+    border-color: var(--color-orange);
+}
+
+.max-content {
+    max-width: max-content;
 }
 
 @media (max-width:991.98px) {
