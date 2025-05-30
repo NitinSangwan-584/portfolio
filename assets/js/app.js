@@ -20,3 +20,25 @@ window.onscroll = function () {
 function topFunction() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+//------------------------------------------------------------------emailjs------------------------
+document.addEventListener("DOMContentLoaded", function () {
+            emailjs.init("gX92W7anPNaKRuQld");
+
+            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                emailjs.sendForm('service_g8efs5f', 'template_mtyvzft', this)
+                    .then(function () {
+                        document.getElementById('form-status').style.display = 'block';
+                        document.getElementById('form-status').textContent = "Message sent successfully!";
+                        document.getElementById('form-status').classList.add('text-success');
+                        document.getElementById('form-status').classList.remove('text-danger');
+                        document.getElementById('contact-form').reset();
+                    }, function (error) {
+                        document.getElementById('form-status').style.display = 'block';
+                        document.getElementById('form-status').textContent = "Failed to send message: " + error.text;
+                        document.getElementById('form-status').classList.remove('text-success');
+                        document.getElementById('form-status').classList.add('text-danger');
+                    });
+            });
+        });
