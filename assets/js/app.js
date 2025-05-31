@@ -20,7 +20,7 @@ window.onscroll = function () {
 function topFunction() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
-//------------------------------------------------------------------emailjs------------------------
+//------------------------------------------------------------------email-js------------------------
 document.addEventListener("DOMContentLoaded", function () {
             emailjs.init("gX92W7anPNaKRuQld");
 

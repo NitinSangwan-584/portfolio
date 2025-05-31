@@ -8,32 +8,18 @@
     <link rel="shortcut icon" href="./assets/img/svg/page-logo.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body class="color-black">
     <!-- header -->
     <header class="align-items-center min-h-100 justify-content-center">
-        <nav class="pb-sm-0 align-items-center color-white w-100 mb-5" data-aos="fade-down" data-aos-duration="1000">
+        <nav class=" pb-sm-0 align-items-center color-white  w-100 mb-5">
             <div class="container">
                 <div class="d-flex align-items-center gap-lg-5 justify-content-between w-100 py-3">
-                    <a href="#" data-aos="fade-right" data-aos-delay="200">
-                        <img src="./assets/img/svg/page-logo.svg" alt="page-logo">
-                    </a>
-                    <button id="theme-toggle" class="border-0 rounded color-white theme-btn color-black"
-                        onclick="switchTheme()" data-aos="fade-down" data-aos-delay="400">
-                        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path id="icon-path"
-                                d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364-7.364l-1.414 1.414M5.636 18.364l-1.414 1.414m15.364-1.414l-1.414-1.414M5.636 5.636l-1.414-1.414M12 6a6 6 0 100 12 6 6 0 000-12z" />
-                        </svg>
-                    </button>
+                    <a href="#"><img src="./assets/img/svg/page-logo.svg" alt="page-logo"></a>
                     <ul id="name"
-                        class="d-flex mb-0 mx-auto align-items-center gap-32 nav-link text-decoration-none list-unstyled"
-                        data-aos="zoom-in" data-aos-delay="600">
+                        class="d-flex mb-0 mx-auto align-items-center gap-32 nav-link text-decoration-none list-unstyled">
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
                                 href="">Home</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
@@ -42,67 +28,86 @@
                                 href="#skills">Skills</a></li>
                         <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
                                 href="#projects">Projects</a></li>
-                        <li><a class="text-decoration-none navbar-link font-family-primary color-white fw-normal fs-6 lh-20"
-                                href="#contact">Contact me</a></li>
+                        <li class="d-lg-none"><a href="#contact"><button
+                                    class="button-1 rounded-2 text-decoration-none  font-family-primary color-white fw-normal fs-6 lh-20 border-0 p-13">Contact
+                                    me</button></a></li>
                     </ul>
-                    <button
-                        class="button-1 rounded-2 color-white font-family-primary fw-semibold lh-25 text-md border-0 p-13"
-                        data-aos="fade-left" data-aos-delay="800">Hire Me</button>
-                    <div onclick="navbarbtn()" class="z-5 d-block d-lg-none cursor-pointer" data-aos="fade-up">
-                        <span class="menu-lines" id="rotates"></span>
-                        <span class="menu-lines menu-line-2" id="transparent"></span>
-                        <span class="menu-lines" id="rotates2"></span>
+                    <a class="d-none d-lg-block" href="#contact"><button
+                            class="button-1 rounded-2 text-decoration-none  font-family-primary color-white fw-normal fs-6 lh-20 border-0 p-13">Contact
+                            me</button></a>
+                    <div class="d-flex gap-5">
+                        <button id="theme-toggle" class="border-0 rounded color-white theme-btn color-black"
+                            onclick="switchTheme()">
+                            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path id="icon-path"
+                                    d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364-7.364l-1.414 1.414M5.636 18.364l-1.414 1.414m15.364-1.414l-1.414-1.414M5.636 5.636l-1.414-1.414M12 6a6 6 0 100 12 6 6 0 000-12z" />
+                            </svg>
+                        </button>
+                        <div onclick="navbarbtn()" class="z-5 d-block d-lg-none cursor-pointer">
+                            <span class="menu-lines" id="rotates"></span>
+                            <span class="menu-lines menu-line-2" id="transparent"></span>
+                            <span class="menu-lines" id="rotates2"></span>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </nav>
-
         <div class="container">
             <div class="row align-items-center py-5 position-relative">
-                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center order-1 order-lg-2"
-                    data-aos="fade-left" data-aos-duration="1000">
+                <div
+                    class="col-md-4 col-12 position-relativ d-flex justify-content-center align-items-center order-1 order-md-2">
                     <div class="my-img-border d-flex justify-content-center align-items-center">
                         <img src="./assets/img/png/image-2.JPG" alt="img" class="my-img">
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 mt-164 d-flex flex-column text-start order-2 order-lg-1"
-                    data-aos="fade-right" data-aos-duration="1000">
-                    <p class="font-family-primary color-white fw-normal text-md lh-28 mt-5">Hi I am <strong
-                            class="color-orange fw-bold">Nitin Sangwan</strong></p>
-                    <h1 class="heading font-family-primary color-white fw-bold text-lg lh-50">
-                        Front-End-Developer</h1>
-                    <p class="font-family-primary fw-normal text-md color-white lh-28 mt-3">Follow Me</p>
-                    <div class="color-white mt-3">
-                        <div class="d-flex gap-3" data-aos="zoom-in" data-aos-delay="300">
-                            <a href="https://discord.com/channels/@me"
-                                class="icon circle d-flex align-items-center justify-content-center" target="_blank">
-                                <img src="./assets/img/svg/discord.svg" alt="discord">
-                            </a>
-                            <a href="https://www.linkedin.com"
-                                class="icon circle d-flex align-items-center justify-content-center" target="_blank">
-                                <img src="./assets/img/svg/in.svg" alt="LinkedIn">
-                            </a>
-                            <a href="https://www.facebook.com/lovely.b.sangwan.1/"
-                                class="icon circle d-flex align-items-center justify-content-center" target="_blank">
-                                <img class="fb" src="./assets/img/svg/fb.svg" alt="Facebook">
-                            </a>
-                            <a href="https://www.instagram.com/nitin_sangwan02/"
-                                class="icon circle d-flex align-items-center justify-content-center" target="_blank">
-                                <img src="./assets/img/svg/insta.svg" alt="Instagram" />
-                            </a>
+                <div class="col-md-8 col-12 mt-164 text-start d-flex justify-content-center order-2 order-md-1">
+                    <div class="d-flex flex-column">
+                        <p class="font-family-primary color-white fw-normal text-md lh-28 mt-5">Hi I am <strong
+                                class="color-orange fw-bold">Nitin Sangwan</strong></p>
+                        <h1 class="heading font-family-primary color-white fw-bold text-lg lh-50 ">
+                            Front-End-Developer</h1>
+                        <p class="font-family-primary fw-normal text-md color-white lh-28  mt-3">Follow Me </p>
+                        <div class="color-white mt-3">
+                            <div class="d-flex  gap-3">
+                                <a href="https://discord.com/channels/@me"
+                                    class="icon circle align-items-center justify-content-center d-flex"
+                                    target="_blank">
+                                    <img src="./assets/img/svg/discord.svg" alt="discord">
+                                </a>
+                                <a href="https://www.linkedin.com"
+                                    class="icon circle align-items-center justify-content-center d-flex"
+                                    target="_blank">
+                                    <img src="./assets/img/svg/in.svg" alt="LinkedIn">
+                                </a>
+                                <a href="https://www.facebook.com/lovely.b.sangwan.1/"
+                                    class="icon circle align-items-center justify-content-center d-flex"
+                                    target="_blank">
+                                    <img class="fb" src="./assets/img/svg/fb.svg" alt="Facebook">
+                                </a>
+                                <a href="https://www.instagram.com/nitin_sangwan02/"
+                                    class="icon circle align-items-center justify-content-center d-flex"
+                                    target="_blank">
+                                    <img src="./assets/img/svg/insta.svg" alt="Instagram" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <!-- about me -->
     <section id="about-me" class="align-items-center min-h-100  py-5">
         <div class="container">
             <div class="row align-items-center py-4">
                 <div class="col-lg-6">
-                    <img src="./assets/img/png/IMG_2166.jpg" alt="Nitin Sangwan" class="img-fluid w-75 my-img-2">
+                    <div class="position-relativ d-flex justify-content-center align-items-center">
+                        <div class="my-img-border d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/png/IMG_2166.jpg" alt="img" class="my-img">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <h2 class="font-family-primary color lh-50 fw-bold text-lg mb-3">About Me</h2>
@@ -127,7 +132,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="font-family-primary fw-bold text-lg color lh-50">My Skills</h2>
-                <p class="font-family-primary fs-5 lh-30 text-white opacity-75">
+                <p class="font-family-primary fs-5 lh-30 color-white opacity-75">
                     Technologies I specialize in:
                 </p>
             </div>
@@ -273,13 +278,13 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <form id="contact-form">
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
                         <div class="mb-3">
-                            <input type="text" name="user_name" class="w-100 p-3 input-border rounded-2"
+                            <input type="text" name="name" class="w-100 p-3 input-border  rounded-2"
                                 placeholder="Your Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" name="user_email" class="w-100 p-3 input-border rounded-2"
+                            <input type="email" name="email" class="w-100 p-3 input-border rounded-2"
                                 placeholder="Your Email" required>
                         </div>
                         <div class="mb-3">
@@ -287,11 +292,12 @@
                                 placeholder="Your Message" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="button-1 px-5 py-2 border-0 rounded text-white">Send
-                                Message</button>
+                            <button type="submit"
+                                class="button-1 font-family-primary px-5 py-2 fw-normal border-0 rounded color-white text-md lh-28">
+                                Send Message
+                            </button>
                         </div>
                     </form>
-                    <p id="form-status" class="text-center mt-3 fw-bold" style="display: none;"></p>
                 </div>
             </div>
         </div>
@@ -300,84 +306,83 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-logo text-center py-5">
-                <img class="rounded border-5" src="./assets/img/svg/page-logo.svg" alt="Footer Logo" />
+                <a href="#"><img class="rounded border-5" src="./assets/img/svg/page-logo.svg" alt="Footer Logo" /></a>
             </div>
-            <div class="footer-content d-flex flex-wrap justify-content-between gap-4 py-5">
-                <div class="footer-links">
-                    <ul class="text-decoration-none list-unstyled">
-                        <li><a href="#home"
-                                class="text-decoration-none hover-orange font-family-primary color-white fw-normal fs-5 lh-base opacity-75 mb-3">Home</a>
-                        </li>
-                        <li><a href="#about-me"
-                                class="text-decoration-none hover-orange font-family-primary color-white fw-normal fs-5 lh-base opacity-75 mb-3">About
-                                Me</a></li>
-                        <li><a href="#skills"
-                                class="text-decoration-none hover-orange font-family-primary color-white fw-normal fs-5 lh-base opacity-75 mb-3">Skills</a>
-                        </li>
-                        <li><a href="#contact"
-                                class="text-decoration-none hover-orange  font-family-primary color-white fw-normal fs-5 lh-base opacity-75">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <a href="mailto:nitinsangwan363@gmail.com"
-                        class="d-flex max-content align-items-center gap-2 color-white hover-orange font-family-primary fw-normal lh-base fs-5 opacity-75 text-decoration-none mb-3">
-                        <img src="./assets/img/svg/mail.svg" alt="Email">
-                        nitinsangwan363@gmail.com</a>
-                    <a href="tel:+918813960912"
-                        class="d-flex max-content align-items-center gap-2 color-white hover-orange font-family-primary fw-normal lh-base fs-5 opacity-75 text-decoration-none mb-3">
-                        <img src="./assets/img/svg/call.svg" alt="Phone">+91 8813960912</a>
-                    <a href="https://www.google.co.in/maps/place/Bank+Colony,+Old+Bharat+Nagar,+Bhiwani,+Haryana+127021"
-                        target="_blank"
-                        class="d-flex align-items-center gap-2 color-white hover-orange font-family-primary fw-normal lh-base fs-5 opacity-75 text-decoration-none"><img
-                            src="./assets/img/svg/location.svg" alt="Location" width="20" height="20">
-                        123 Street Bank Colony, Bhiwani, Haryana
-                    </a>
-                </div>
-                <div class="footer-newsletter">
-                    <p class="color-white font-family-primary fw-bold lh-base fs-5 opacity-75">Subscribe for updates and
-                        news.</p>
-                    <form class="newsletter-form" action="#" method="post" aria-label="Subscribe to newsletter">
-                        <input class="input-border py-1 rounded-2" type="email" placeholder="Your email"
-                            aria-label="Email address" required />
-                        <button
-                            class="button-1  color-white font-family-primary  rounded-2 fw-bold lh-25 fs-5 border-0 p-13">Subscribe</button>
-                    </form>
-                </div>
+            <div class="footer-links mb-5">
+                <ul
+                    class="list-unstyled d-flex flex-column flex-sm-row flex-wrap justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5 px-3 text-center">
+                    <li>
+                        <a href="#home"
+                            class="text-decoration-none hover-orange font-family-primary color-white fw-normal fs-6 fs-sm-5 lh-base opacity-75 navbar-link">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about-me"
+                            class="text-decoration-none hover-orange font-family-primary color-white fw-normal fs-6 fs-sm-5 lh-base opacity-75 navbar-link">
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills"
+                            class="text-decoration-none hover-orange font-family-primary color-white fw-normal fs-6 fs-sm-5 lh-base opacity-75 navbar-link">
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="text-decoration-none hover-orange font-family-primary color-white fw-normal fs-6 fs-sm-5 lh-base opacity-75 navbar-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="color-white mt-3 d-flex justify-content-center py-3">
-                <div class="d-flex justify-content-center justify-content gap-3">
-                    <a href="https://discord.com/channels/@me"
-                        class="icon circle align-items-center justify-content-center d-flex" target="_blank">
-                        <img src="./assets/img/svg/discord.svg" alt="discord">
-                    </a>
-                    <a href="https://www.linkedin.com"
-                        class="icon circle align-items-center justify-content-center d-flex" target="_blank">
-                        <img src="./assets/img/svg/in.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.facebook.com/lovely.b.sangwan.1/"
-                        class="icon circle align-items-center justify-content-center d-flex" target="_blank">
-                        <img class="fb" src="./assets/img/svg/fb.svg" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/nitin_sangwan02/"
-                        class="icon circle align-items-center justify-content-center d-flex" target="_blank">
-                        <img src="./assets/img/svg/insta.svg" alt="Instagram" />
-                    </a>
-                </div>
+            <div
+                class="footer-contact d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5 mb-5 text-center px-3">
+                <a href="mailto:nitinsangwan363@gmail.com"
+                    class="d-flex align-items-center gap-2 color-white hover-orange font-family-primary fw-normal lh-base fs-6 fs-md-5 opacity-75 text-decoration-none">
+                    <img src="./assets/img/svg/mail.svg" alt="Email">
+                    nitinsangwan363@gmail.com
+                </a>
+                <a href="tel:+918813960912"
+                    class="d-flex align-items-center gap-2 color-white hover-orange font-family-primary fw-normal lh-base fs-6 fs-md-5 opacity-75 text-decoration-none">
+                    <img src="./assets/img/svg/call.svg" alt="Phone">
+                    +91 8813960912
+                </a>
+                <a href="https://www.google.co.in/maps/place/Bank+Colony,+Old+Bharat+Nagar,+Bhiwani,+Haryana+127021"
+                    target="_blank"
+                    class="d-flex align-items-center gap-2 color-white hover-orange font-family-primary fw-normal lh-base fs-6 fs-md-5 opacity-75 text-decoration-none">
+                    <img src="./assets/img/svg/location.svg" alt="Location" width="20" height="20">
+                    Bhiwani, Haryana
+                </a>
             </div>
-            <p class="font-family-primary text-center fs-6 fw-normal lh-sm color-white py-4">&copy; 2025 <strong
-                    class="color-orange">Nitin Sangwan</strong> All rights reserved.</p>
         </div>
+        <div class="color-white mt-3 d-flex justify-content-center py-3">
+            <div class="d-flex justify-content-center justify-content gap-3">
+                <a href="https://discord.com/channels/@me"
+                    class="icon circle align-items-center justify-content-center d-flex" target="_blank">
+                    <img src="./assets/img/svg/discord.svg" alt="discord">
+                </a>
+                <a href="https://www.linkedin.com" class="icon circle align-items-center justify-content-center d-flex"
+                    target="_blank">
+                    <img src="./assets/img/svg/in.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.facebook.com/lovely.b.sangwan.1/"
+                    class="icon circle align-items-center justify-content-center d-flex" target="_blank">
+                    <img class="fb" src="./assets/img/svg/fb.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/nitin_sangwan02/"
+                    class="icon circle align-items-center justify-content-center d-flex" target="_blank">
+                    <img src="./assets/img/svg/insta.svg" alt="Instagram" />
+                </a>
+            </div>
+        </div>
+        <p class="font-family-primary text-center fs-6 fw-normal lh-sm color-white py-4">&copy; 2025 <strong
+                class="color-orange">Nitin Sangwan</strong> All rights reserved.</p>
     </footer>
     <!-- go to top btn  -->
     <button class="fs-4 position-fixed myBtn" onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <!-- Custom JS -->
     <script src="./assets/js/app.js"></script>
 </body>
